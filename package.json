@@ -1,0 +1,27 @@
+{
+  "name": "basic-restful-api",
+  "version": "1.0.0",
+  "description": "restful-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mantha-parthu/basic-restful-api.git"
+  },
+  "author": "mantha parvatheesham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mantha-parthu/basic-restful-api/issues"
+  },
+  "homepage": "https://github.com/mantha-parthu/basic-restful-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "mongoose": "^6.2.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
