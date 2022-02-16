@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 
 const orderSchema = new mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
-  productId: Number,
-  quantity: Number,
+  good: { type: mongoose.Schema.Types.ObjectId, required: true, ref: "Good" },
+  quantity: { type: Number, default: 1, required: true },
 });
 
 module.exports = mongoose.model("Order", orderSchema);

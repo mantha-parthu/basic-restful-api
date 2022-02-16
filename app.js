@@ -9,7 +9,8 @@ mongoose.connect(
 );
 
 const orderRoutes = require("./api/routes/orders");
-const productRoutes = require("./api/routes/products");
+const goodRoutes = require("./api/routes/goods");
+const buyerRoutes = require("./api/routes/buyers");
 
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -25,7 +26,8 @@ app.use((req, res, next) => {
 });
 
 app.use("/orders", orderRoutes);
-app.use("/products", productRoutes);
+app.use("/goods", goodRoutes);
+app.use("/buyer", buyerRoutes);
 
 app.use((req, res, next) => {
   const err = new Error("Not found");
