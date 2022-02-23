@@ -5,6 +5,7 @@ const bcrypt = require("bcrypt");
 const Buyer = require("../models/buyer");
 const jwt = require("jsonwebtoken");
 const buyerController = require("../controllers/buyerController");
+const checkAuth = require("../middleware/checkAuth");
 
 router.get("/all", buyerController.allBuyers);
 
